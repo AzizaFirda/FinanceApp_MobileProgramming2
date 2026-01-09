@@ -257,6 +257,6 @@ Customize aplikasi sesuai preferensi Anda dengan pengaturan yang simpel namun po
 
 **FinanceApp - Take Control of Your Financial Future** 💰✨
 
-*Simple, Smart, Secure*
+*Project dalam proses pengembangan*
 
 </div>
