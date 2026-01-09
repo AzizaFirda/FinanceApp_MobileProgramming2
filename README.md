@@ -1,7 +1,4 @@
 # 💰 FinanceApp - Smart Personal Finance Tracker
-
-## 🎯 Ide Proyek
-
 **FinanceApp** adalah solusi pencatatan keuangan pribadi yang dirancang untuk memberikan pengalaman manajemen finansial yang **sederhana**, **intuitif**, dan **aman**. Berbeda dengan aplikasi keuangan lainnya yang memerlukan koneksi internet dan akun, Money Manager hadir dengan konsep **100% offline-first** yang menjamin privasi data Anda tetap terjaga sepenuhnya di perangkat Anda sendiri.
 
 ### 💡 Latar Belakang
