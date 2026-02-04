@@ -329,7 +329,7 @@ Berikut adalah tampilan aplikasi Money Manager Mobile:
   <tr>
     <td><img src="assets/images/splash/dashboard.jpeg" width="200" alt="Dashboard"/></td>
     <td><img src="assets/images/splash/list.jpeg" width="200" alt="Transactions"/></td>
-    <td><img src="assets/images/splash/statistics2" width="200" alt="Accounts"/></td>
+    <td><img src="assets/images/splash/statistics2.jpeg" width="200" alt="Accounts"/></td>
   </tr>
 </table>
 
