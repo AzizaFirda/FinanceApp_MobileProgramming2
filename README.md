@@ -11,13 +11,90 @@ Di era digital ini, banyak orang kesulitan melacak pengeluaran dan pemasukan mer
 - **Modern & Beautiful** - User interface yang clean, minimalis, dan nyaman digunakan
 - **Gratis & Open Source** - Tanpa iklan, tanpa biaya tersembunyi, dan kode terbuka untuk transparansi
 
-### 🎯 Target Pengguna
+---
 
-- 💼 **Pekerja** - Yang ingin melacak gaji dan pengeluaran bulanan
-- 🎓 **Mahasiswa** - Yang perlu mengatur uang saku dengan bijak
-- 👨‍👩‍👧‍👦 **Keluarga** - Yang ingin mengelola keuangan rumah tangga
-- 💪 **Freelancer** - Yang memiliki income tidak tetap
-- 🎯 **Siapa Saja** - Yang peduli dengan kesehatan finansial mereka
+## 🛠 Tech Stack
+
+| Technology         | Version | Purpose                          |
+| ------------------ | ------- | -------------------------------- |
+| Flutter            | ^3.9.2  | Cross-platform framework         |
+| Dart               | ^3.9.2  | Programming language             |
+| Provider           | ^6.1.1  | State management                 |
+| Supabase Flutter   | ^2.3.4  | Backend & Database               |
+| Firebase Core      | ^2.24.2 | Firebase integration             |
+| Firebase Auth      | ^4.16.0 | Authentication                   |
+| Cloud Firestore    | ^4.14.0 | Cloud database                   |
+| Firebase Storage   | ^11.6.5 | File storage                     |
+| Hive               | ^2.2.3  | Local caching & persistence      |
+| FL Chart           | ^0.65.0 | Charts & visualizations          |
+| Google Fonts       | ^7.0.0  | Custom typography                |
+| Image Picker       | ^1.0.7  | Select & upload images           |
+| Intl               | ^0.20.2 | Internationalization & locale    |
+| UUID               | ^4.0.0  | Unique identifier generation     |
+
+---
+
+## 📁 Project Structure
+
+```
+lib/
+├── main.dart                          # Entry point aplikasi
+│
+├── core/                              # Layer fondasi
+│   ├── config/
+│   │   └── app_config.dart            # Konfigurasi aplikasi
+│   ├── services/
+│   │   ├── auth_service.dart          # Autentikasi Supabase
+│   │   └── storage_service.dart       # Local storage dengan Hive
+│   └── theme/
+│       └── app_theme.dart             # Warna, font, styling
+│
+├── data/                              # Layer data
+│   ├── models/
+│   │   ├── transaction_model.dart     # Data transaksi (income/expense)
+│   │   ├── account_model.dart         # Data akun (bank, dompet)
+│   │   ├── category_model.dart        # Kategori transaksi
+│   │   ├── budget_model.dart          # Data budget
+│   │   └── user_profile_model.dart    # Profil pengguna
+│   │
+│   └── repositories/                  # Akses API & database
+│       ├── supabase_repository.dart   # Akses Supabase
+│       ├── auth_repository.dart       # Repository autentikasi
+│       └── transaction_repository.dart # Repository transaksi
+│
+└── presentation/                      # Layer UI
+    ├── providers/                     # State management (Provider)
+    │   ├── auth_provider.dart
+    │   ├── transaction_provider.dart
+    │   ├── account_provider.dart
+    │   ├── category_provider.dart
+    │   ├── budget_provider.dart
+    │   └── setting_provider.dart
+    │
+    ├── screens/                       # Halaman UI
+    │   ├── splash_screen.dart
+    │   ├── main_screen.dart
+    │   ├── auth/
+    │   │   ├── login_screen.dart
+    │   │   └── register_screen.dart
+    │   ├── home/
+    │   │   └── home_screen.dart
+    │   ├── transaction/
+    │   │   ├── transaction_screen.dart
+    │   │   └── add_transaction_screen.dart
+    │   ├── category/
+    │   │   └── category_screen.dart
+    │   ├── statistics/
+    │   │   └── statistics_screen.dart
+    │   └── settings/
+    │       └── settings_screen.dart
+    │
+    └── widgets/                       # Komponen reusable
+        ├── transaction_card.dart
+        ├── account_card.dart
+        ├── category_selector.dart
+        └── chart_widget.dart
+```
 
 ---
 
@@ -161,45 +238,7 @@ Pahami pola keuangan Anda dengan berbagai grafik dan chart yang informatif dan i
 
 ---
 
-### 5️⃣ Budget Tracking & Management
-
-Kontrol pengeluaran Anda dengan sistem budget yang smart dan real-time monitoring.
-
-#### 🎯 Set Budget
-
-**Budget per Category:**
-- Tentukan budget maksimal untuk setiap kategori
-- Period: Bulanan (monthly)
-- Flexible amount sesuai kebutuhan
-- Multiple budgets untuk kategori berbeda
-
-**Budget Settings:**
-- **Amount** - Nominal budget yang dialokasikan
-- **Category** - Pilih kategori yang ingin di-budget
-- **Period** - Currently monthly (akan ada weekly, yearly)
-- **Rollover** - Option untuk carry over sisa budget (coming soon)
-
-#### 📊 Budget Monitoring
-
-**Real-time Progress Bar:**
-- **Visual Progress** - Bar yang berubah warna sesuai usage
-- **Percentage** - Lihat berapa persen budget yang sudah terpakai
-- **Remaining Amount** - Sisa budget yang tersedia
-- **Color Indicators:**
-  - 🟢 **Green** - Safe zone (0-70%)
-  - 🟡 **Yellow** - Warning zone (70-90%)
-  - 🔴 **Red** - Danger zone (90-100%)
-  - 🔴 **Dark Red** - Over budget (>100%)
-
-**Budget Overview:**
-- **Total Budget** - Jumlah total budget semua kategori
-- **Total Spent** - Total yang sudah digunakan
-- **Overall Progress** - Progress keseluruhan
-- **Budget Summary** - List semua kategori dengan progress masing-masing
-
----
-
-### 6️⃣ Settings & Personalization
+### 5️⃣ Settings & Personalization
 
 Customize aplikasi sesuai preferensi Anda dengan pengaturan yang simpel namun powerful.
 
@@ -243,13 +282,84 @@ Customize aplikasi sesuai preferensi Anda dengan pengaturan yang simpel namun po
 **3. 🌐 Language**
 - **🇮🇩 Bahasa Indonesia** - Full Indonesian translation
 - **🇺🇸 English** - Default language
-- More languages coming soon
 
 **4. 📅 Date Format**
 - **dd/MM/yyyy** - Indonesian style (09/01/2025)
 - **MM/dd/yyyy** - US style (01/09/2025)
 - **yyyy-MM-dd** - ISO format (2025-01-09)
 - Consistent date display across app
+
+---
+
+## 🎬 Demo
+
+<p align="center">
+  <img src="assets/images/splash/splash_img.png" alt="Demo Money Manager Mobile" width="300"/>
+</p>
+
+---
+
+## 📸 Screenshots
+
+Berikut adalah tampilan aplikasi Money Manager Mobile:
+
+### Auth Screens
+
+<table>
+  <tr>
+    <td align="center"><b>Login</b></td>
+    <td align="center"><b>Register</b></td>
+    <td align="center"><b>Splash</b></td>
+  </tr>
+  <tr>
+    <td><img src="assets/images/splash/splash_img.png" width="200" alt="Login Screen"/></td>
+    <td><img src="assets/images/splash/splash_img.png" width="200" alt="Register Screen"/></td>
+    <td><img src="assets/images/splash/splash_img.png" width="200" alt="Splash Screen"/></td>
+  </tr>
+</table>
+
+### Main Screens
+
+<table>
+  <tr>
+    <td align="center"><b>Dashboard Home</b></td>
+    <td align="center"><b>Transaction List</b></td>
+    <td align="center"><b>Account Management</b></td>
+  </tr>
+  <tr>
+    <td><img src="assets/images/splash/splash_img.png" width="200" alt="Dashboard"/></td>
+    <td><img src="assets/images/splash/splash_img.png" width="200" alt="Transactions"/></td>
+    <td><img src="assets/images/splash/splash_img.png" width="200" alt="Accounts"/></td>
+  </tr>
+</table>
+
+### Financial Features
+
+<table>
+  <tr>
+    <td align="center"><b>Budget Planning</b></td>
+    <td align="center"><b>Statistics & Charts</b></td>
+    <td align="center"><b>Category Management</b></td>
+  </tr>
+  <tr>
+    <td><img src="assets/images/splash/splash_img.png" width="200" alt="Budget"/></td>
+    <td><img src="assets/images/splash/splash_img.png" width="200" alt="Statistics"/></td>
+    <td><img src="assets/images/splash/splash_img.png" width="200" alt="Categories"/></td>
+  </tr>
+</table>
+
+### Settings & Profile
+
+<table>
+  <tr>
+    <td align="center"><b>User Profile</b></td>
+    <td align="center"><b>Settings</b></td>
+  </tr>
+  <tr>
+    <td><img src="assets/images/splash/splash_img.png" width="200" alt="Profile"/></td>
+    <td><img src="assets/images/splash/splash_img.png" width="200" alt="Settings"/></td>
+  </tr>
+</table>
 
 ---
 
