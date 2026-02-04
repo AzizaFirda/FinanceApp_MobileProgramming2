@@ -312,9 +312,9 @@ Berikut adalah tampilan aplikasi Money Manager Mobile:
     <td align="center"><b>Splash</b></td>
   </tr>
   <tr>
-    <td><img src="assets/images/splash/splash_img.png" width="200" alt="Login Screen"/></td>
-    <td><img src="assets/images/splash/splash_img.png" width="200" alt="Register Screen"/></td>
-    <td><img src="assets/images/splash/splash_img.png" width="200" alt="Splash Screen"/></td>
+    <td><img src="assets/images/splash/login.jpeg" width="200" alt="Login Screen"/></td>
+    <td><img src="assets/images/splash/regis.jpeg" width="200" alt="Register Screen"/></td>
+    <td><img src="assets/images/splash/splash.jpeg" width="200" alt="Splash Screen"/></td>
   </tr>
 </table>
 
@@ -327,9 +327,9 @@ Berikut adalah tampilan aplikasi Money Manager Mobile:
     <td align="center"><b>Account Management</b></td>
   </tr>
   <tr>
-    <td><img src="assets/images/splash/splash_img.png" width="200" alt="Dashboard"/></td>
-    <td><img src="assets/images/splash/splash_img.png" width="200" alt="Transactions"/></td>
-    <td><img src="assets/images/splash/splash_img.png" width="200" alt="Accounts"/></td>
+    <td><img src="assets/images/splash/dashboard.jpeg" width="200" alt="Dashboard"/></td>
+    <td><img src="assets/images/splash/list.jpeg" width="200" alt="Transactions"/></td>
+    <td><img src="assets/images/splash/statistics2" width="200" alt="Accounts"/></td>
   </tr>
 </table>
 
@@ -337,14 +337,27 @@ Berikut adalah tampilan aplikasi Money Manager Mobile:
 
 <table>
   <tr>
-    <td align="center"><b>Budget Planning</b></td>
-    <td align="center"><b>Statistics & Charts</b></td>
-    <td align="center"><b>Category Management</b></td>
+    <td align="center"><b>Income</b></td>
+    <td align="center"><b>Expense</b></td>
+    <td align="center"><b>Transfer</b></td>
   </tr>
   <tr>
-    <td><img src="assets/images/splash/splash_img.png" width="200" alt="Budget"/></td>
-    <td><img src="assets/images/splash/splash_img.png" width="200" alt="Statistics"/></td>
-    <td><img src="assets/images/splash/splash_img.png" width="200" alt="Categories"/></td>
+    <td><img src="assets/images/splash/income.jpeg" width="200" alt="Budget"/></td>
+    <td><img src="assets/images/splash/expense.jpeg" width="200" alt="Statistics"/></td>
+    <td><img src="assets/images/splash/transfer.jpeg" width="200" alt="Categories"/></td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <td align="center"><b>Asssets</b></td>
+    <td align="center"><b>Liabilitas</b></td>
+    <td align="center"><b>Statistics</b></td>
+  </tr>
+  <tr>
+    <td><img src="assets/images/splash/assets.jpeg" width="200" alt="Budget"/></td>
+    <td><img src="assets/images/splash/liabilitas.jpeg" width="200" alt="Statistics"/></td>
+    <td><img src="assets/images/splash/statistics1.jpeg" width="200" alt="Categories"/></td>
   </tr>
 </table>
 
@@ -356,8 +369,8 @@ Berikut adalah tampilan aplikasi Money Manager Mobile:
     <td align="center"><b>Settings</b></td>
   </tr>
   <tr>
-    <td><img src="assets/images/splash/splash_img.png" width="200" alt="Profile"/></td>
-    <td><img src="assets/images/splash/splash_img.png" width="200" alt="Settings"/></td>
+    <td><img src="assets/images/splash/profil.jpeg" width="200" alt="Profile"/></td>
+    <td><img src="assets/images/splash/basic.jpeg" width="200" alt="Settings"/></td>
   </tr>
 </table>
 
