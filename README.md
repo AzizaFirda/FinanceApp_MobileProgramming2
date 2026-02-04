@@ -294,7 +294,7 @@ Customize aplikasi sesuai preferensi Anda dengan pengaturan yang simpel namun po
 ## 🎬 Demo
 
 <p align="center">
-  <img src="assets/images/splash/splash_img.png" alt="Demo Money Manager Mobile" width="300"/>
+  <img src="assets/images/splash/mobile.gif" alt="Demo Money Manager Mobile" width="300"/>
 </p>
 
 ---
